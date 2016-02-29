@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dauber.Test", "Dauber.Test\Dauber.Test.csproj", "{51F3F406-599F-4746-89F9-20FFDE6DA637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dauber.Test.Sample", "Dauber.Test.Sample\Dauber.Test.Sample.csproj", "{83E8CAEB-2B77-49B0-81A7-0205EF1974E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51F3F406-599F-4746-89F9-20FFDE6DA637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F3F406-599F-4746-89F9-20FFDE6DA637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F3F406-599F-4746-89F9-20FFDE6DA637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F3F406-599F-4746-89F9-20FFDE6DA637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E8CAEB-2B77-49B0-81A7-0205EF1974E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E8CAEB-2B77-49B0-81A7-0205EF1974E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E8CAEB-2B77-49B0-81A7-0205EF1974E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E8CAEB-2B77-49B0-81A7-0205EF1974E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
