@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using StructureMap;
 
 namespace Dauber.Core
@@ -9,12 +10,20 @@ namespace Dauber.Core
     /// </summary>
     public static class IoC
     {
+        private static readonly Lazy<StructureMap.Container> _containerBuilder =
+            new Lazy<StructureMap.Container>(defaultContainer, LazyThreadSafetyMode.ExecutionAndPublication);
+
         public static IContainer Container
         {
-            get
+            get { return _containerBuilder.Value; }
+        }
+
+        private static StructureMap.Container defaultContainer()
+        {
+            return new StructureMap.Container(x =>
             {
-                return StructureMap.ObjectFactory.Container;
-            }
+                // default config
+            });
         }
 
         public static T TryGetInstance<T>()
@@ -56,7 +65,7 @@ namespace Dauber.Core
 
         public static void Setup(params string[] assemblies)
         {
-            ObjectFactory.Initialize(initalizer =>
+            Container.Configure(initalizer =>
             {
                 initalizer.Scan(scanner =>
                 {
